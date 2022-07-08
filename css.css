@@ -1,6 +1,31 @@
-.top-container{
-    width: 100%;
-    height: 8%;
-    background-color: lightskyblue;
-    
+body{
+    padding: 0;
+    margin: 0;
 }
+
+a{
+    text-decoration: none;
+}
+
+.top-container ul{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    list-style: none;
+}
+
+.top-container li{
+    display: inline;
+    float: left;
+
+}
+
+.top-container a{
+    color: black;
+
+}
+
+
