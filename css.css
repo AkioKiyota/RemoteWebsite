@@ -4,6 +4,7 @@ body{
 }
 
 .top-container{
+    top: 0;
     position: fixed;
     width: 100%;
     height: 85px;
@@ -14,10 +15,11 @@ body{
 }
 
 .logo{
+    top: 0;
     width: 12%;
-    height: 80px;
+    height: 40px;
     background: white;
-    position: absolute;
+    position: fixed;
     margin: 0;
     text-align: center;
     padding: 15px 25px;
@@ -67,6 +69,29 @@ body{
     text-align: center;
 }
 
+.main-grid{
+    display: grid;
+    width: 70%;
+    height: 320px;
+    background-color: slategray;
+    margin: 340px 15%;
+    grid-template-columns: auto auto auto;
+}
+
+.games-grid{
+    text-align: center;
+    background-color: red;
+}
+
+.assets-grid{
+    text-align: center;
+    background-color: blue;
+}
+
+.artworks-grid{
+    text-align: center;
+    background-color: pink;
+}
 
 /*SPECIFIC*/
 
