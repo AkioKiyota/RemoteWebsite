@@ -5,6 +5,7 @@ body{
 
 .top-container{
     top: 0;
+    z-index: 98;
     position: fixed;
     width: 100%;
     height: 85px;
@@ -71,26 +72,65 @@ body{
 
 .main-grid{
     display: grid;
-    width: 70%;
-    height: 320px;
-    background-color: slategray;
-    margin: 340px 15%;
-    grid-template-columns: auto auto auto;
+    width: 90%;
+    height: 1280px;
+    margin: 340px 5%;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 .games-grid{
-    text-align: center;
-    background-color: red;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin: 0 60px 0 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 
 .assets-grid{
-    text-align: center;
-    background-color: blue;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin: 0 0 0 60px;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 6;
 }
 
 .artworks-grid{
-    text-align: center;
-    background-color: pink;
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin: 0 60px 0 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.main-grid h3{
+    box-sizing: border-box;
+    width: 95%;
+    margin: 35px auto;
+}
+
+.main-grid p{
+    box-sizing: border-box;
+    width: 95%;
+    margin: 25px auto;
+}
+
+.content-buttons{
+    box-sizing: border-box;
+    width: 35%;
+    height: 50;
+    display: block;
+    margin: 35px auto;
+    border: none;
 }
 
 /*SPECIFIC*/
@@ -99,3 +139,38 @@ body{
     width: 140px;
 }
 
+#games-button{
+    color: white;
+    background-color: #008CBA;
+}
+
+#games-button:hover{
+    color: #008CBA;
+    background-color: white;
+    border: solid 1px #008CBA;
+    border-radius: 4px;
+}
+
+#assets-button{
+    color: white;
+    background-color: #4CAF50;
+}
+
+#assets-button:hover{
+    color: #4CAF50;
+    background-color: white;
+    border: solid 1px #4CAF50;
+    border-radius: 4px;
+}
+
+#artworks-button{
+    color: white;
+    background-color: #f44336;
+}
+
+#artworks-button:hover{
+    color: #f44336;
+    background-color: white;
+    border: solid 1px #f44336;
+    border-radius: 4px;
+}
