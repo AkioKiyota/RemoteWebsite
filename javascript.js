@@ -24,11 +24,11 @@ function scrollFunc()
 function Logo()
 {
     logo.fontSize = '20px';
-    logo.padding = '11px 5px';
+    logo.padding = '6px 20px';
 }
 
 function LogoR()
 {
     logo.fontSize = '35px';
-    logo.padding = '11px 20px';
+    logo.padding = '6px 20px';
 }

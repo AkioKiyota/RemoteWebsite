@@ -11,7 +11,7 @@ body{
     height: 250px;
     width: 3%;
     margin-left: 97%;
-    margin-top: 200px;
+    margin-top: 100px;
     transition: margin-left ease .3s, width ease .3s, height ease .3s,
       background-color ease .3s;
 }
@@ -44,15 +44,21 @@ body{
     position: fixed;
     margin: 0;
     text-align: center;
-    padding: 11px 5px;
+    padding: 6px 5px;
     z-index: 99;
     font-size: 35px;
-    transition: font-size ease .3s;
+    transition: font-size ease .3s, margin ease .3s, transform ease .3s;
 }
 
 .logo a{
+    margin: 0;
     text-decoration: none;
-    color: #008BCA;
+    color: white;
+    -webkit-text-stroke: .3px black;
+}
+
+.logo:hover{
+    transform: scale(1.25);
 }
 
 .top-container ul>li>a{
@@ -95,24 +101,26 @@ body{
 .middle-img{
     width: 100%;
     height: 250px;
-    border-bottom: solid 1px #42F0C8;
 }
 
 .main-grid{
     display: grid;
-    width: 100%;
+    width: 85%;
     height: 1050px;
-    margin: 0;
+    margin: 0 auto;
+    border-radius: 10px;
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto;
     background-color: white;
+    z-index: 90;
+    box-shadow: 0px 0px 20px rgb(250, 250, 250);
 }
 
 .games-grid{
     background-color: white;
     border: solid 1px #008CBA;
     border-radius: 5px;
-    margin: 0 60px 0 0;
+    margin: 75px 60px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -123,7 +131,7 @@ body{
     background-color: white;
     border: solid 1px #4CAF50;
     border-radius: 5px;
-    margin: 0 0 0 60px;
+    margin: 75px 60px;
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 3;
@@ -134,7 +142,7 @@ body{
     background-color: white;
     border: solid 1px #f44336;
     border-radius: 5px;
-    margin: 0 60px 0 0;
+    margin: 75px 60px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
@@ -164,6 +172,15 @@ body{
     border: none;
 }
 
+.footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, .8);
+    box-shadow: 0px -10px 8px rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
 /*SPECIFIC*/
 
 #artWorksNavigatorText {
@@ -173,6 +190,8 @@ body{
 #games-button{
     color: white;
     background-color: #008CBA;
+    border-radius: 4px;
+    transition: background-color ease .3s;
 }
 
 #games-button:hover{
@@ -185,6 +204,8 @@ body{
 #assets-button{
     color: white;
     background-color: #4CAF50;
+    border-radius: 4px;
+    transition: background-color ease .3s;
 }
 
 #assets-button:hover{
@@ -197,6 +218,8 @@ body{
 #artworks-button{
     color: white;
     background-color: #f44336;
+    border-radius: 4px;
+    transition: background-color ease .3s;
 }
 
 #artworks-button:hover{
