@@ -20,9 +20,9 @@ body{
     z-index: 98;
     position: fixed;
     width: 100%;
-    height: 85px;
+    height: 60px;
     background: white;
-    border-bottom: solid 2px lightsteelblue;
+    border-bottom: solid 1px lightsteelblue;
     display: flex;
     align-items: center;
 }
@@ -31,17 +31,17 @@ body{
     top: 0;
     width: 12%;
     height: 40px;
-    background: white;
     position: fixed;
     margin: 0;
     text-align: center;
-    padding: 15px 25px;
+    padding: 11px 20px;
     z-index: 99;
 }
 
 .logo a{
     text-decoration: none;
     color: #008BCA;
+    font-size: 30px;
     
 }
 
