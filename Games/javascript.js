@@ -3,7 +3,7 @@ window.onscroll = function()
     scrollFunc();
 }
 
-var scrollValue = 200;
+var scrollValue = 60;
 
 var topContainer = document.getElementById('top-container').style;
 var logo = document.getElementById('logo').style
