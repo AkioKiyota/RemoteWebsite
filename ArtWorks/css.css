@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.socials:hover{
+    background-color: #54D4D3;
+    height: 350px;
+    width: 75px;
+    margin-left: 90%;
+}
+
+
+.top-container{
+    top: 0;
+    z-index: 98;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-bottom: solid 1px #42F0C8;
+    display: flex;
+    align-items: center;
+    transition: height ease .3s;
+}
+
+.logo{
+    top: 0;
+    width: 12%;
+    height: 40px;
+    position: fixed;
+    margin: 0;
+    text-align: center;
+    padding: 6px 5px;
+    z-index: 99;
+    font-size: 35px;
+    transition: font-size ease .3s, margin ease .3s, transform ease .3s;
+}
+
+.logo a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: .3px black;
+}
+
+.logo:hover{
+    transform: scale(1.25);
+}
+
+.top-container ul>li>a{
+    font-size: 15px;
+}
+
+.top-container a{
+    text-decoration: none;
+    color: #333;
+}
+
+.top-container ul{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 12%;
+}
+
+.top-container ul>li{
+    text-align: center;
+    display: inline;
+    float: left;
+    width: 100px;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    padding: 0;
+    background-color: white;
+    border: solid 0px lightsteelblue;
+    transition: padding ease .2s, margin ease .2s,
+    border ease .2s;
+}
+
+.top-container ul>li:hover{
+    padding: 10px 10px;
+    margin: 0;
+    border: solid 2px lightsteelblue;
+    text-align: center;
+}
+
+/* MAIN CONTENT */
+
+.main-grid{
+    width: 1250px;
+    margin: 120px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+
+    background-color: #333;
+
+}
+
+.img {
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* SPESIFIC */
+
